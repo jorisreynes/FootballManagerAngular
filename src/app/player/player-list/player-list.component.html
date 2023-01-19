@@ -1,0 +1,23 @@
+<h1 class="center">Liste de joueurs</h1>
+
+<div class="container">
+	<div class="row">
+		<div *ngFor="let player of playerList" class="col m4 s6">
+			<div class="card horizontal">
+				<div class="card-image">
+					<img [src]="player.picture">
+				</div>
+				<div class="card-stacked">
+					<div class="card-content">
+						<p>{{ player.name }}</p>
+						<p>{{ player.age }} ans</p>
+						<p>{{ player.type }}</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button"
+	(click)="onButtonClicked($event)">Ajouter un joueur</button>
+</div>
