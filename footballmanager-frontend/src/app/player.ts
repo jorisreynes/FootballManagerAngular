@@ -1,4 +1,4 @@
-import { IPlayer } from "shared";
+import { IPlayer } from '@shared';
 
 export class Player implements IPlayer{
     id: number;
