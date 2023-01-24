@@ -9,7 +9,6 @@ import { PlayerModule } from './player/player.module';
 import { FormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [
     AppComponent

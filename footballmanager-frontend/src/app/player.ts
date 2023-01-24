@@ -1,4 +1,6 @@
-export class Player {
+import { IPlayer } from "shared";
+
+export class Player implements IPlayer{
     id: number;
     age: number;
     name: string;
