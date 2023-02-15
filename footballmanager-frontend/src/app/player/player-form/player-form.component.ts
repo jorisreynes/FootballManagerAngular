@@ -43,7 +43,7 @@ export class PlayerFormComponent implements OnInit {
 		console.log(this.player)
 
 		PLAYERS.push(this.player)
-
+		this.router.navigate(['player']);
 
 	}
 }
