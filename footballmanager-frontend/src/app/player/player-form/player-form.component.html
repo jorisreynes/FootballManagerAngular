@@ -1,6 +1,6 @@
 <h1>Ajouter un joueur</h1>
 
-<form [formGroup]="PlayerForm">
+<form [formGroup]="playerForm">
 
     <label for="name">Name: </label>
     <input id="name" type="text"
@@ -17,8 +17,7 @@
         <label for="type">Poste: </label>
         <input id="type" type="text" formControlName="type">
    
-        <button class="button" type="submit">Ajouter</button> 
-
+        <button class="button" type="submit" (click)="addPlayer()">Ajouter</button>
         <p><button type="button"
 	        (click)="onButtonClicked($event)">Liste des joueurs
         </button></p>
